@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "310832377447",
+    "project_id": "umrella-7dc71",
+    "storage_bucket": "umrella-7dc71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310832377447:android:27e12a84f2c99797ddeec2",
+        "android_client_info": {
+          "package_name": "com.example.umbrella"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt93DNfjl8DWKTba-qjJLTkA5mTbKZiqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

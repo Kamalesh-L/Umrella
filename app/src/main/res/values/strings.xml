@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Umbrella</string>
+    <string name="umrella">UmRella</string>
+    <string name="find_your_rain_shield">Find Your Rain Shield</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+    <string name="email">email</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">already have account</string>
+</resources>

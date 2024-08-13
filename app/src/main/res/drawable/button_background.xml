@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#d7d6d6"/> <!-- Pink color on press -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#000000"/> <!-- Default blue color -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+</selector>

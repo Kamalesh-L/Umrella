@@ -37,7 +37,14 @@ android {
 }
 
 dependencies {
-
+    implementation ("com.google.android.gms:play-services-maps:18.0.2")
+    implementation ("com.google.android.material:material:1.9.0")
+    implementation ("org.tensorflow:tensorflow-lite:2.9.0")
+    implementation ("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.7")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation ("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")

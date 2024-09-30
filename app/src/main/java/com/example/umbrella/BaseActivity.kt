@@ -77,6 +77,9 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
             R.id.nav_logout -> {
                 logout()
             }
+            R.id.nav_pred -> {
+                replaceFragment(predict())
+            }
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true

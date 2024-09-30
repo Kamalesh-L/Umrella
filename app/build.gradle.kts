@@ -37,6 +37,9 @@ android {
 }
 
 dependencies {
+    implementation ("com.squareup.okhttp3:okhttp:4.9.2")
+    implementation ("com.google.code.gson:gson:2.8.6")
+
     implementation ("com.google.android.gms:play-services-maps:18.0.2")
     implementation ("com.google.android.material:material:1.9.0")
     implementation ("org.tensorflow:tensorflow-lite:2.9.0")

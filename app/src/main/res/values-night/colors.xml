@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#FFFFFF</color> <!-- White -->
+
+    <!-- Primary Text Color -->
+    <color name="primaryTextColor">#333333</color> <!-- Dark Gray -->
+
+    <!-- Secondary Text Color -->
+    <color name="secondaryTextColor">#777777</color> <!-- Light Gray -->
+
+    <!-- Hint Text Color -->
+    <color name="hintTextColor">#AAAAAA</color> <!-- Gray -->
+
+    <!-- Button Background Color -->
+    <color name="buttonBackgroundColor">#007ACC</color> <!-- Blue -->
+
+    <!-- Button Text Color -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- White -->
+
+    <!-- Link Text Color -->
+    <color name="linkTextColor">#007ACC</color> <!-- Blue -->
+</resources>

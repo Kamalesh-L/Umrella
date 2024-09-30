@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/blackbg">
+
+    <TextView
+        android:id="@+id/weatherDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Weather Details:"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="26dp"/>
+
+    <!--    <Button-->
+<!--        android:id="@+id/predictButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Predict"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@id/weatherDetailsTextView"/>-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/predictButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Predict"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#00495B" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prediction Result"
+        android:textColor="@color/hintTextColor"
+        android:layout_below="@id/predictButton"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"/>
+
+</RelativeLayout>

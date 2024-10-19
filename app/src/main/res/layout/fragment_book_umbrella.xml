@@ -3,19 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="16dp">
 
-    <TextView
+    <!-- Button to trigger QR scanning -->
+    <Button
+        android:id="@+id/scanButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Book Umbrella Page"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:text="Scan QR Code" />
 
-    <!-- Container for the map -->
-    <FrameLayout
-        android:id="@+id/map_container"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginTop="16dp"/>
+    <!-- TextView to display scan result -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result will be shown here"
+        android:layout_marginTop="16dp" />
 </LinearLayout>

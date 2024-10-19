@@ -31,10 +31,10 @@
             android:name=".WelcomeActivity"
             android:exported="false" /> <!-- LoginActivity for user login -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".auth.LoginActivity"
             android:exported="true" /> <!-- RegisterActivity for user registration -->
         <activity
-            android:name=".RegisterActivity"
+            android:name=".auth.RegisterActivity"
             android:exported="false" />
     </application>
 

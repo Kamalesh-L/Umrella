@@ -1,4 +1,4 @@
-package com.example.umbrella
+package com.example.umbrella.fragment
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.example.umbrella.R
+import com.example.umbrella.WeatherResponse
+import com.example.umbrella.WeatherService
 import com.google.android.material.button.MaterialButton
 import retrofit2.Call
 import retrofit2.Callback
@@ -47,6 +50,14 @@ class HomeFragment : Fragment() {
             // Replace the current fragment with BookUmbrellaFragment
             parentFragmentManager.beginTransaction()
                 .replace(R.id.content_frame, BookUmbrellaFragment())
+                .addToBackStack(null)
+                .commit()
+        }
+        val viewMapButton: MaterialButton = view.findViewById(R.id.viewMapButton)
+        viewMapButton.setOnClickListener {
+            // Replace the current fragment with MapFragment
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.content_frame, MapFragment())
                 .addToBackStack(null)
                 .commit()
         }

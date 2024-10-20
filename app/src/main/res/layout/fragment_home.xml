@@ -87,9 +87,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="BOOK UMBRELLA"
+                        android:enabled="true"
                         app:backgroundTint="#00495B"
                         android:textColor="@android:color/white"
                         android:layout_marginTop="100dp"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/dropUmbrellaButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drop Umbrella"
+                        android:enabled="false"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="10dp"/>
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/viewMapButton"
                         android:layout_width="wrap_content"

@@ -37,12 +37,12 @@ android {
 }
 
 dependencies {
+
     implementation ("com.google.mlkit:barcode-scanning:17.0.2")
     implementation ("com.google.mlkit:barcode-scanning:17.0.2")
     implementation("com.google.mlkit:barcode-scanning:17.0.2")
     implementation ("com.journeyapps:zxing-android-embedded:4.3.0")
     implementation ("com.google.zxing:core:3.4.0")
-
     implementation ("com.squareup.okhttp3:okhttp:4.9.2")
     implementation ("com.google.code.gson:gson:2.8.6")
     implementation ("com.google.firebase:firebase-database:20.0.5")

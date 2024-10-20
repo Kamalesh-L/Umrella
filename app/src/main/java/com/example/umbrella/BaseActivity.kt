@@ -17,6 +17,7 @@ import com.example.umbrella.fragment.HomeFragment
 import com.example.umbrella.fragment.ProfileFragment
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
 open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -46,7 +47,7 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
         // Set default fragment
         if (savedInstanceState == null) {
-            replaceFragment(HomeFragment())
+            checkUserProfile()
         }
         val userEmail = getUserEmail()
         val navHeaderView = navigationView.getHeaderView(0)
@@ -107,5 +108,27 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
     private fun getUserEmail(): String? {
         val user = FirebaseAuth.getInstance().currentUser
         return user?.email
+    }
+    private fun checkUserProfile() {
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            val userRef = FirebaseDatabase.getInstance().getReference("users").child(currentUser.uid)
+            userRef.get().addOnSuccessListener { snapshot ->
+                if (snapshot.exists()) {
+                    // Profile data exists, navigate to HomeFragment
+                    replaceFragment(HomeFragment())
+                } else {
+                    // Profile data does not exist, navigate to ProfileFragment
+                    replaceFragment(ProfileFragment())
+                }
+            }.addOnFailureListener {
+                Toast.makeText(this, "Failed to check user profile.", Toast.LENGTH_SHORT).show()
+                // Default to ProfileFragment in case of failure
+                replaceFragment(ProfileFragment())
+            }
+        } else {
+            // No user is logged in, navigate to ProfileFragment
+            replaceFragment(ProfileFragment())
+        }
     }
 }

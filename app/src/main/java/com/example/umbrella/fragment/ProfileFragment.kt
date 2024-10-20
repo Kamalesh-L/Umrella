@@ -134,7 +134,9 @@ class ProfileFragment : Fragment() {
             "name" to name,
             "phone" to phone,
             "address" to address,
-            "birthday" to birthday
+            "birthday" to birthday,
+            "bookedUmbrella" to false,
+            "bookedUmbrellaId" to ""
         )
 
         database.child(currentUser.uid).setValue(userProfile).addOnCompleteListener { task ->

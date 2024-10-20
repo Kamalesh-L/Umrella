@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.gms.google-services")
+
 }
 
 android {
@@ -37,7 +38,7 @@ android {
 }
 
 dependencies {
-
+    implementation("com.google.android.gms:play-services-maps:19.0.0")
     implementation ("com.google.mlkit:barcode-scanning:17.0.2")
     implementation ("com.google.mlkit:barcode-scanning:17.0.2")
     implementation("com.google.mlkit:barcode-scanning:17.0.2")

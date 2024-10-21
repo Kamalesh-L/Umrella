@@ -99,6 +99,12 @@ class BookUmbrellaFragment : Fragment() {
             resultTextView.text = "Invalid Umbrella QR Code"
         }
     }
+    private fun replaceFragment(fragment: Fragment) {
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.content_frame, fragment)
+            .commit()
+    }
+
 
     private fun bookUmbrella(umbrellaId: String) {
         val currentUser = FirebaseAuth.getInstance().currentUser
@@ -120,6 +126,7 @@ class BookUmbrellaFragment : Fragment() {
             Toast.makeText(activity, "Umbrella $umbrellaId booked!", Toast.LENGTH_SHORT).show()
             // After booking, disable the umbrella scan button
             umbrellaScanButton.isEnabled = false
+            replaceFragment(HomeFragment())
         } else {
             Toast.makeText(activity, "Please log in to book an umbrella.", Toast.LENGTH_SHORT).show()
         }

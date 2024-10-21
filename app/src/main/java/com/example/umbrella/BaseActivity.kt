@@ -76,9 +76,9 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
             R.id.nav_profile -> {
                 replaceFragment(ProfileFragment())
             }
-            R.id.nav_booking -> {
-                replaceFragment(BookingFragment())
-            }
+//            R.id.nav_booking -> {
+//                replaceFragment(BookingFragment())
+//            }
             R.id.nav_logout -> {
                 logout()
             }

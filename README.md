@@ -13,7 +13,7 @@ This app not only enables umbrella booking but also provides a real-time weather
 - **Umbrella Status Tracking**: Uses Firebase Realtime Database to manage and update umbrella availability.
 
 ## 🎥 Demo Video
-[UmRella App Demo](https://github.com/user-attachments/assets/demo-link)
+[UmRella App Demo](https://drive.google.com/file/d/1HPzXjYuz1V7wqBlhol_tO7tue2bEKZj-/view)
 
 ## 🌟 Key Features
 - **User Authentication**: Secure Sign-Up and Login for personalized access.
